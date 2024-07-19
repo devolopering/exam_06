@@ -92,6 +92,16 @@ header ul .login:hover {
   margin-top: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
 }
+@media screen and (max-width: 600px) {
+  #login-container #login-form {
+    width: 100%;
+  }
+  #login-container .login-btn {
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+  }
+}
 #login-container .login-btn {
   display: flex;
   align-items: center;
@@ -213,7 +223,8 @@ header ul .login:hover {
   transition: all 0.3s;
 }
 @media screen and (max-width: 800px) {
-  .adminPage textarea, .adminPage input {
+  .adminPage textarea,
+  .adminPage input {
     width: 100%;
   }
   .adminPage .adminInput input {
