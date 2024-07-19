@@ -24,7 +24,14 @@ header ul a {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  color: dodgerblue;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
+  transition: all ease-in 0.6s;
+}
+header ul a:hover {
   color: #6d25cc;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
+  transition: all ease-in 0.6s;
 }
 header ul .login {
   display: flex;
