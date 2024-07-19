@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 900px;
+    margin:20px auto;
+    padding: 20px 30px;
+    background-color: rgb(194, 216, 234);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
+    border-radius: 10px;
+    ul{
+       list-style: none;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 20px;
+
+       a{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #6d25cc;
+      
+       }
+       .login {
+        display: flex;
+        align-items: center;
+        border: solid dodgerblue 2px;
+        background-color: dodgerblue;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        gap: 3px;
+        transition: .3s ease-in;
+    }
+    
+    .login i {
+        transition: transform .3s ease;
+    }
+    
+    .login:hover i {
+        transform: translate(10px, 0);
+        transition: transform .3s ease;
+    }
+    .login:hover{
+        background-color: transparent;
+        color: dodgerblue;
+        transition: .3s ease-in;
+    }
+    
+    }
+  
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+  }
+#login-container{
+    max-width: 800px;
+    height: 100vh;
+    padding-inline: 30px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+   
+
+  #login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    width: 70%;
+    border: #ccccccd7 2px solid;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
+  }
+  .login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 3.6rem;
+    font-size: clamp(1.8rem, 4vw, 3.6rem);
+    font-weight: 600;
+    line-height: 4.8rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+  .input-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  input{
+    width: 100%;
+    padding: 18px 10px 8px;
+    border: none;
+    outline: none;
+    border-bottom:3px solid #ccc ;
+    font-size: 16px;
+    transition: all .3s;
+    user-select: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  input:focus{
+    border-color: dodgerblue;
+    transition: all .3s;
+  }
+  button{
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    padding:10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease-in;
+    border: solid 2px dodgerblue;
+  }
+   button:focus{
+    border-color: dodgerblue;
+    
+   }
+   button:hover{
+    background-color: transparent;
+    border: solid 2px dodgerblue;
+    color: dodgerblue;
+    transition: .3s ease-in;
+}
+}
+.adminPage{
+    max-width: 900px;
+    margin-inline: auto;
+    margin-top: 30px;
+    background-color: rgb(194, 216, 234);
+    color: dodgerblue;
+    padding: 30px 20px 20px;
+    border: #ccccccd7 2px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.093);
+  
+    #adminForm{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    label{
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+    .adminInput{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 70%;
+            padding: 10px 10px;
+            margin-bottom: 20px;
+            outline: none;
+            border-radius: 5px;
+            border: #ccc 2px solid;
+            font-size: 16px;
+            font-family: sans-serif;
+           
+        }
+        input:focus{
+            border-color: dodgerblue;
+            transition: all .3s;
+          }
+    }
+    textarea{
+        width: 70%;
+        height: 130px;
+        margin-bottom: 20px;
+        outline: none;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 10px 10px;
+        font-size: 18px;
+       
+    }
+    textarea:focus{
+        border-color: dodgerblue;
+        transition: all .3s;
+      }
+      @media screen and (max-width:800px) {
+        textarea, input {
+            width: 100%;
+        }
+        .adminInput input{
+            width: 100%;
+        }
+      }
+    button{
+        margin-top: 10px;
+        border: none;
+        background-color: dodgerblue;
+        color: #fff;
+        padding:10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition: .3s ease-in;
+        border: solid 2px dodgerblue;
+      }
+       button:focus{
+        border-color: dodgerblue;
+        
+       }
+       button:hover{
+        background-color: transparent;
+        border: solid 2px dodgerblue;
+        color: dodgerblue;
+        transition: .3s ease-in;
+      }
+       h3{
+        margin-bottom: 8px;
+        color: #6d25cc;
+        font-family:  sans-serif;
+       }
+       strong{
+        color: #6d25cc;
+        font-family:  sans-serif;
+       }
+       p{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #6d25cc;
+        font-family:  sans-serif;
+       }
+       #productList{
+           border: #0d0c0eaf solid 2px;
+           border: #c9c4cf solid 2px;
+           border-radius: 5px;
+           padding: 20px;
+           ol{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-items: center;
+            gap: 20px;
+           }
+           li{
+              font-size: 18px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: 600;
+              margin-left: 20px;
+           }
+       }
+       
+ }
+

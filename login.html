@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="loader" id="loader" style="display: none;"><img src="./loader/Spinner.svg" alt="loader"></div>
+  <div id="login-container">
+    <h2>Log In </h2>
+
+    <form id="login-form">
+      <div class="input-wrapper">
+      <input type="email" placeholder="User email..." id="email" name="email" required>
+      <input type="password" placeholder="Password..." id="password" name="password" required>
+    </div>
+    <div class="login-btn">
+      <button type="submit">Kirish</button>
+      <a href="#" style="font-size: 16px; color: dodgerblue;">Forgot Password?</a>
+    </div>
+  
+      <p id="error-message" style="color: red; font-family: Arial, Helvetica, sans-serif;"></p>
+    </form>
+  </div>
+
+  <script src="./login.js"></script>
+  
+</body>
+</html>

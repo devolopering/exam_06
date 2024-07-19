@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div style="padding-inline: 20px;">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Admin</a></li>
+        <li><a href="login.html" class="login">Login <i class='bx bxs-log-in'></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="admin" class="adminPage" >
+    <form id="adminForm">
+      <div class="adminInput">
+      <label for="name">Nomi:</label>
+      <input type="text" placeholder="Product name..." id="name" name="Name" required>
+      <label for="price">Narxi:</label>
+      <input type="number" placeholder="Product price..." id="price" name="price" required>
+    </div>
+      <label for="discrip">Tavsifi:</label>
+      <textarea id="discrip" name="discrip" required></textarea>
+      <button type="submit">Qo'shish</button>
+    </form>
+    <div id="productList"></div>
+  </div>
+</div>
+  <script src="/admin.js"></script>
+ 
+</body>
+</html>
